@@ -31,13 +31,13 @@ class Smack_a_Mole extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Smack_a_MoleHomePage(title: 'Smack-a-Mole Home Page'),
+      home: const HomePage(title: 'Smack-a-Mole Home Page'),
     );
   }
 }
 
-class Smack_a_MoleHomePage extends StatefulWidget {
-  const Smack_a_MoleHomePage({super.key, required this.title});
+class HomePage extends StatefulWidget {
+  const HomePage({super.key, required this.title});
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -51,10 +51,10 @@ class Smack_a_MoleHomePage extends StatefulWidget {
   final String title;
 
   @override
-  State<Smack_a_MoleHomePage> createState() => _Smack_a_MoleHomePageState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _Smack_a_MoleHomePageState extends State<Smack_a_MoleHomePage> {
+class _HomePageState extends State<HomePage> {
   int _counter = 0;
 
   void _incrementCounter() {
