@@ -1,7 +1,13 @@
+import 'package:flame/util.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const Smack_a_Mole());
+Future main() async {
+  // Setup the flame utility
+  Util flameUtil = Util();
+  await flameUtil.fullScreen();
+  //await flameUtil.setOrientation(DeviceOrientation.portraitUp);
+
+  //runApp(const Smack_a_Mole());
 }
 
 class Smack_a_Mole extends StatelessWidget {
